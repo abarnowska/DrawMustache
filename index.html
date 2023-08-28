@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw mustache</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14df1aae20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="menu">
+
+            <i class="fa-solid fa-brush"></i>
+            <h1>Draw mustache </h1>
+            <p class="text">Be like Marcel Duchamp! Feel free to draw mustache on the most famous paintings of the
+                world!</p>
+
+            <div class="info-box">
+                <i class="fa-regular fa-circle-question info-icon"></i>
+                <p>You don't know who is Marcel Duchamp?</p>
+                <div class="info-box__description">
+
+                    <p>
+
+                        Marcel Duchamp (1887-1968) was a French painter and sculptor whose work is associated with
+                        Cubism, Dada, and conceptual art. He has had an immense impact on 20th- and 21st-century
+                        art, and a seminal influence on the development of
+                        conceptual art.
+                        <br>
+                        <br>
+                        One of his best-known pieces of art is "L.H.O.O.Q." based on a cheap postcard reproduction
+                        of Leonardo da Vinci's "Mona Lisa" onto which Duchamp drew a mustache and beard in pencil
+                        and appended the title.
+                    </p>
+                </div>
+            </div>
+
+            <div class="input-box">
+
+                <div class="input-box__color">
+                    <label for="stroke">pick color:</label>
+                    <input id="stroke" name="stroke" type="color">
+                </div>
+
+                <div class="input-box__line-width">
+                    <label for="lineWidth">line width:</label>
+                    <input id="lineWidth" name="lineWidth" type="number" value="5">
+                </div>
+
+            </div>
+
+            <div class="tools-btns">
+                <button class="button changeImgBtn">Change image</button>
+                <button class="button clearBtn">Clear</button>
+            </div>
+
+
+            <div class="painting-info">
+                <h2>About this painting</h2>
+                <div class="painting-info__about">
+                    <div class="painting-info__data">
+                        <p class="author">Leonardo da Vinci</p>
+                        <p class="painting-title">Mona Lisa</p>
+                    </div>
+                    <i class="fa-regular fa-circle-question info-icon show-painting-description"></i>
+                    <div class="painting-description">
+                        <p>The Mona Lisa painting is one of the most emblematic portraits in the history of art, where
+                            is located at the Louvre. Painted by Leonardo da Vinci in the 16th century, it joined the
+                            collections of the court of France before being added to the works on display at the Louvre
+                            Museum.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="painting">
+            <canvas class="drawing-board"></canvas>
+        </div>
+    </section>
+
+
+
+        <script type="module" src="./index.js"></script>
+</body>
+
+</html>

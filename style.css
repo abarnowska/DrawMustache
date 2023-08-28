@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* padding: 2em; */
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	background: rgb(56, 56, 56);
+	background: radial-gradient(
+		circle,
+		rgba(56, 56, 56, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	padding: 3em;
+	max-width: 1200px;
+}
+
+.menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	margin-right: 3em;
+	width: 40%;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+
+.fa-brush {
+	font-size: 7rem;
+	text-align: center;
+	color: #ebc86e;
+	margin-bottom: 0.3em;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: "Pacifico", cursive;
+	font-weight: 200;
+}
+
+.text {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.info-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 2em 0;
+	font-size: 1.4rem;
+}
+
+.info-icon {
+	margin-right: 0.5em;
+	font-size: 3rem;
+	cursor: help;
+	color: #ebc86e;
+}
+
+.info-icon:hover ~ .info-box__description {
+	display: block;
+}
+
+.info-box__description {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	padding: 1em;
+	margin-left: 1em;
+	width: 400px;
+	font-size: 1.6rem;
+	background-color: #fff;
+	border-radius: 8px;
+	color: black;
+	z-index: 1000;
+}
+
+.input-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.input-box__color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.input-box__line-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.input-box label {
+	padding-right: 1em;
+	font-size: 1.8rem;
+	font-weight: 200;
+	font-family: "Pacifico", cursive;
+}
+
+.input-box input {
+	width: 30%;
+	font-size: 2rem;
+	font-family: inherit;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.tools-btns {
+	display: flex;
+	margin-top: 1em;
+}
+
+.button {
+	margin: 0.5em;
+	padding: 1em;
+	border-radius: 8px;
+	border: none;
+	font-size: 1.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: inherit;
+	background-color: #ebc86e;
+	cursor: pointer;
+	transition: background-color 0.1s;
+}
+
+.button:hover {
+	background-color: #bda15a;
+}
+
+.painting-info {
+	position: relative;
+	padding: 1em;
+	font-size: 1.6rem;
+}
+
+.painting-info h2 {
+	margin-bottom: 0.5em;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 200;
+	font-family: "Pacifico", cursive;
+}
+
+.painting-info__data {
+	margin-right: 1em;
+}
+
+.painting-info .author {
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+.painting-info .painting-title {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+.painting-info__about {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.show-painting-description:hover ~ .painting-description {
+	display: block;
+}
+
+.painting-description {
+	display: none;
+	position: absolute;
+	bottom: 70px;
+	left: 170px;
+	padding: 1em;
+	width: 400px;
+	background-color: #fff;
+	color: black;
+	border-radius: 8px;
+	transition: 0.3;
+	z-index: 1000;
+}
+
+.painting {
+	position: relative;
+	background-image: url(./img/MonaLisa.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	width: 50%;
+}
+
+.drawing-board {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+	body {
+		height: 100%;
+		overflow: visible;
+	}
+	.container {
+		flex-direction: column;
+	}
+
+	.menu {
+		width: 100%;
+		margin: 0;
+	}
+
+	.info-box__description {
+		width: 100%;
+	}
+
+	.painting-description {
+		left: 0;
+		width: 100%;
+	}
+
+	.painting {
+		margin-top: 1em;
+		width: 100vw;
+	}
+}
