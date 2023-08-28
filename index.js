@@ -1,5 +1,3 @@
-// import { paintingsData } from "./_data.js";
-
 const paintingsData = [
 	{
 		title: "Mona Lisa",
