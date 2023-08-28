@@ -124,4 +124,13 @@ canvas.addEventListener("mouseup", e => {
 
 canvas.addEventListener("mousemove", drawingFn);
 
+canvas.addEventListener("touchmove", function (e) {
+  const touch = e.touches[0];
+  const mouseEvent = new MouseEvent("mousemove", {
+    clientX: touch.clientX,
+    clientY: touch.clientY
+  });
+  canvas.dispatchEvent(mouseEvent);
+}, false);
+
 
