@@ -34,4 +34,11 @@ export const paintingsData = [
 			"Painted by Frida Kahlo in 1940. Although this painting has a small size (about 16x24), it draws lots of interest since it contains so many aspects that are symbolic of Frida Kahlo. One of them is a hummingbird hanging on the thorn, which knots around her throat. Her expression is calm and solemn. It also seems she is patiently enduring the pain. She was not painting a realistic scene but using these symbolic elements to express her feelings. A bird often symbolizes freedom and life. Especially a hummingbird, which is colorful and always hovering above flowers. But in this painting, the hummingbird is black and lifeless. This might be a symbol of Frida herself. Frida spent most of her life in physical pain after the bus accident when she was eighteen. After that, she endured about 35 operations to fix her body. This is a painting about her suffering.",
 		url: "url(./img/Frida.jpg)",
 	},
+	{
+		title: "Musica (Melody)",
+		author: "Kate Bunce",
+		description:
+			"In this Pre-Raphaelite portrait, a young woman plays the lyre. Kate Bunce has painted her sister, Myra Bunce. Myra designed metalwork during the Arts and Crafts Movement led by William Morris. They were some of the first women to make a career out of art. If you look closely, you can see an inscription 'MUSICA' on the mirror frame. Myra made many of the frames for her sister’s paintings, and inspired this witty inclusion here.",
+		url: "url(./img/Kate_Bunce.jpeg)",
+	},
 ];
